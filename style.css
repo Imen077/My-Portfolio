@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'sora', sans-serif;
+    scroll-behavior: smooth;
 }
 header {
     display: flex;
@@ -184,6 +185,9 @@ section{
     object-fit: cover;
     border-radius: 18px
 }
+.text-project {
+    text-align: center;
+}
 .project-details span{
     font-weight: 800;
 }
@@ -236,6 +240,9 @@ input, textarea {
     border-radius: 4px;
     border: 1.4px solid black;
 }   
+section .contact h2{
+    align-items: center;
+}
 textarea {
     min-height: 150px;
     resize: none;
@@ -262,8 +269,9 @@ textarea {
     flex-direction: column;
     gap: 32px;
 }
-.contact-info h2 {
+.contact-info h2, p{
     font-weight: 800;
+    text-align: center;
 }
 .container{
     display: flex;
@@ -290,3 +298,69 @@ textarea {
     gap: 20px;
     display: flex;
 }
+@media (max-width: 640px) {
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+    }
+    .hero-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* padding-bottom: 40px;  */
+    }
+    .tabs {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: static;
+      transform: translate(0%);
+      margin-top: 40px;
+    }
+    .images-section {
+      width: 500px;
+    }
+    section .container{
+        display: flex;
+        flex-direction: column;
+    }
+    section .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+    section .experiences {
+        width: 10rem;
+    }
+
+    section .experiences-list img{
+        width: 20rem;
+    }
+    section .project{
+        display: flex;
+        flex-direction: column;
+    }
+    section .project img{
+        width: 100%;
+    }
+    section .project-details{
+        display: flex;
+        flex-direction: column;
+    }
+    section .project-details img{
+        width: 100%;
+    }
+    .container-contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .button-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+  }
